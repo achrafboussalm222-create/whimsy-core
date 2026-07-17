@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 88px;
+}
+
+::selection {
+  background: #d9c79a;
+  color: #2e261f;
+}
+
+/* Custom scrollbar for thumbnail rails */
+.thin-scrollbar::-webkit-scrollbar {
+  height: 6px;
+}
+.thin-scrollbar::-webkit-scrollbar-thumb {
+  background: #b89b5e;
+  border-radius: 999px;
+}
+
+.hero-bg {
+  background:
+    radial-gradient(ellipse 60% 50% at 78% 18%, rgba(184, 155, 94, 0.2), transparent 60%),
+    radial-gradient(ellipse 55% 45% at 15% 85%, rgba(90, 92, 58, 0.14), transparent 60%),
+    #f7f2e8;
+}
